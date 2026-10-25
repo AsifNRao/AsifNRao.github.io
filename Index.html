@@ -1,1 +1,201 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asif Nisar Rao | Portfolio</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --border: rgba(255, 255, 255, 0.08);
+      --accent: #38bdf8;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 0 1.5rem;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 4rem 0; }
+    
+    /* Header / Hero */
+    header { border-bottom: 1px solid var(--border); padding-bottom: 3rem; margin-bottom: 3rem; }
+    h1 { font-size: 2.5rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-size: 1.25rem; color: var(--accent); margin-bottom: 1rem; }
+    .summary { font-size: 1.05rem; color: var(--text-muted); max-width: 700px; }
+    
+    /* Metrics Grid */
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .metric-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+    .metric-num { font-size: 1.8rem; font-weight: 700; color: #fff; }
+    .metric-desc { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* Sections */
+    section { margin-bottom: 3.5rem; }
+    h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem; margin-bottom: 1.5rem; }
+
+    /* Project / Experience Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: rgba(255, 255, 255, 0.25); }
+    .card-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; }
+    .card-title { font-size: 1.2rem; font-weight: 600; color: #fff; }
+    .card-date { font-size: 0.85rem; color: var(--text-muted); }
+    .card-desc { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem; }
+
+    /* Badges */
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tag {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      font-size: 0.75rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      color: var(--accent);
+    }
+
+    /* Contact Links */
+    .contact-links { display: flex; gap: 1rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: rgba(255, 255, 255, 0.1); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Asif Nisar Rao</h1>
+      <div class="subtitle">Management Researcher & Data Specialist</div>
+      <p class="summary">
+        Master’s candidate specializing in Organizational Behavior, management research methodologies, and quantitative data analysis. Bridging empirical behavioral frameworks with advanced computational software.
+      </p>
+
+      <div class="metrics">
+        <div class="metric-card">
+          <div class="metric-num">9+ Years</div>
+          <div class="metric-desc">Healthcare & imaging tech experience</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">3.61</div>
+          <div class="metric-desc">BBA Honours CGPA</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">7+ Tools</div>
+          <div class="metric-desc">SPSS, OriginPro, Materials Studio</div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Research & Selected Work</h2>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">Leader Humor & AI Adoption Behavior</div>
+          <div class="card-date">2026</div>
+        </div>
+        <p class="card-desc">
+          Investigated the influence of leader affiliative humor on employee artificial intelligence adoption behavior. Conducted theoretical modeling, survey design, structural equation modeling, and empirical hypothesis testing.
+        </p>
+        <div class="tags">
+          <span class="tag">Organizational Behavior</span>
+          <span class="tag">SPSS</span>
+          <span class="tag">Empirical Research</span>
+          <span class="tag">AI Adoption</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">Scientific & Quantitative Data Analytics</div>
+          <div class="card-date">2025 – 2026</div>
+        </div>
+        <p class="card-desc">
+          Executed complex spectroscopic and quantitative analyses utilizing multi-package research toolchains for visual synthesis and statistical reporting.
+        </p>
+        <div class="tags">
+          <span class="tag">OriginPro</span>
+          <span class="tag">CasaXPS</span>
+          <span class="tag">Materials Studio</span>
+          <span class="tag">Data Plotting</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience & Education</h2>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">Master in Business Management</div>
+          <div class="card-date">Beijing University of Chemical Technology</div>
+        </div>
+        <p class="card-desc">Specialization in Organizational Behavior, empirical research methods, and management theory.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">Bachelor of Business Administration (Hons)</div>
+          <div class="card-date">CGPA: 3.61 / 4.00</div>
+        </div>
+        <p class="card-desc">Foundation in strategic management, statistical decision systems, and marketing analysis.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">Radiology & Imaging Specialist / MRI Technician</div>
+          <div class="card-date">Fauji Foundation Hospital</div>
+        </div>
+        <p class="card-desc">Delivered high-precision medical imaging diagnostic workflows across 9+ years of operational hospital service.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Toolbox & Competencies</h2>
+      <div class="tags">
+        <span class="tag">SPSS</span>
+        <span class="tag">OriginPro</span>
+        <span class="tag">CasaXPS</span>
+        <span class="tag">Materials Studio</span>
+        <span class="tag">ChemDraw</span>
+        <span class="tag">ImageJ</span>
+        <span class="tag">Organizational Research</span>
+        <span class="tag">Quantitative Methods</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Connect</h2>
+      <div class="contact-links">
+        <a href="mailto:your-email@example.com" class="btn">Email Me</a>
+        <a href="https://linkedin.com" class="btn" target="_blank">LinkedIn</a>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
